@@ -3,7 +3,6 @@
     "private": true,
     "dependencies": {
         "jquery":"latest",
-        "bootstrap": "latest",
-        "font-awesome": "latest"
+        "bootstrap": "latest"
     }
 }
