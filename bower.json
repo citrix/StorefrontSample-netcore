@@ -1,0 +1,9 @@
+{
+    "name": "asp.net",
+    "private": true,
+    "dependencies": {
+        "jquery":"latest",
+        "bootstrap": "latest",
+        "font-awesome": "latest"
+    }
+}
