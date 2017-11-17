@@ -5,22 +5,6 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-## Pull Request Process
-
-1. Each script(s) should be in its own sub-directory under the relevant product directory and contain a README.md, LICENSE.MD and script files. For example
-    ```
-      Storefront
-          Create Store
-              CreateNewStore.ps1
-              README.md
-              LICENSE.md
-    ```
-2. Comment changes to scripts in the appropiate location within the affected script.
-3. Document any external depencies that scripts would need to execute sucessfully.
-4. Update the README.md with details of changes if changes affect input, output parameters, file locations, help and if scripts using containers, container parameters.
-5. Increase the version numbers in any affected script and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-
 ## Code of Conduct
 
 ### Our Pledge
@@ -45,8 +29,9 @@ include:
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
+* The use of sexualized language or imagery     and unwelcome sexual attention or
+  advances
+
 * Trolling, insulting/derogatory comments, and personal or political attacks
 * Public or private harassment
 * Publishing others' private information, such as a physical or electronic
