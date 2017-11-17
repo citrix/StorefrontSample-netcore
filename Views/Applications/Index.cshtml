@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+@model List<CitrixApplicationInfo>
+@addTagHelper *, Microsoft.AspNet.Mvc.TagHelpers
+@addTagHelper *,storefront-sample-web
+
+<!DOCTYPE html>  
 <html lang="en">
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +10,15 @@
     </head>
     <body>
       <div class="container">
+        @foreach ( var item in Model )
+        {
+          <div>
+            <Citrix-App-Url app-item="@item" window-target="_blank">
+              <Citrix-App-Icon app-item="@item" image-size="64" app-id="@item.ID"></Citrix-App-Icon>
+              <div>@item.AppTitle</div>
+            </Citrix-App-Url>
+          </div>
+        }
       </div>
       <script src="~/lib/jquery/dist/jquery.js"></script>
       <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>  
