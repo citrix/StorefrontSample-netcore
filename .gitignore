@@ -1,6 +1,3 @@
-#vs code directories
-.vscode/*
-
 #general directories
 [bB]in/*
 [oO]bj/*
