@@ -16,6 +16,9 @@ namespace storefront_sample_web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -26,14 +29,15 @@ namespace storefront_sample_web
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            app.UseSession();
+
+            //setting up the route definition and default route.
+            app.UseMvc( routes => {
+                routes.MapRoute("default","{controller=Login}/{action=Index}/{id?}");
+            });
 
             app.UseStaticFiles();
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World MVC!");
-            });
         }
     }
 }
