@@ -6,7 +6,7 @@ and launching site. This is intended to demonstrate the APIs as well as provide 
 for you to if you would like to embed some of this functionality into your own applications/web sites (SharePoint, WordPress, etc).
 
 ## Sample site preview
-[](./preview-images/sample-storefront.png)
+[](/preview-images/sample-storefront.png)
 
 ## Prerequisites
 
