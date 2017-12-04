@@ -5,6 +5,9 @@ how to interact with the StoreFront WebAPI to build a small, functional applicat
 and launching site. This is intended to demonstrate the APIs as well as provide a template
 for you to if you would like to embed some of this functionality into your own applications/web sites (SharePoint, WordPress, etc).
 
+## Sample site preview
+[](./preview-images/sample-storefront.png)
+
 ## Prerequisites
 
 Depending on which implementation you are interested in, your prereqs might be a little different. We have broken down the pre-reqs based on which path you would like.
