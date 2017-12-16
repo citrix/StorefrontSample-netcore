@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: sf-netapp-rc
+  labels: 
+    app: sf-netapp-rc
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels: 
+        app: citrix-sf
+    spec:
+      containers:
+        - name: citrix-sf-container
+          image: citrixdeveloper/citrix-storefront-apidemo
+          ports:
+            - containerPort: 5000
