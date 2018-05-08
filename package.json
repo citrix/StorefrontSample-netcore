@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "popper.js": "^1.14.3"
+  }
+}
