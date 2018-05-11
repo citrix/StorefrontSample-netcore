@@ -2,8 +2,5 @@
 [bB]in/*
 [oO]bj/*
 
-#wwwroot directory
-wwwroot
-
 #node_modues
 node_modules
