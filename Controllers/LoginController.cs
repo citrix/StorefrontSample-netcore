@@ -14,10 +14,11 @@ public class LoginController : Controller
 
     public async Task<IActionResult> Process(LoginInfo loginInfo)
     {
+        var SECRET_NAME = "THIS IS AT EST";
         // Store the server address and weburl in the session for further requests. Not the best
         // implementation, but the sample is about displaying applications. Another sanple should
         // show best practices about authentication.
-        HttpContext.Session.SetString("SFAddress",loginInfo.SFAddress);
+        HttpContext.Session.SetString("SFAddress", SECRET_NAME);
         HttpContext.Session.SetString("SFWebURL",loginInfo.SFWebURL);
 
         //process API
